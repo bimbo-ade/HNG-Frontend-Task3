@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
+
 const Header = () => {
   return (
-    <div className="w-[80%] h-[48px]  mx-auto flex justify-between items-center font-rose mt-[36px] ">
+    <div className="w-[80%]  h-[48px]  mx-auto flex justify-between items-center font-rose mt-[36px] ">
       <div>
-        <img src={logo} alt="logo" width={180} />
+        <img src={logo} alt="logo" width={120} className="tablet:w-[160px]" />
       </div>
       <div>
         <ul className="flex justify-between mobile:hidden tablet:flex laptop:flex">
@@ -17,7 +18,7 @@ const Header = () => {
         </ul>
       </div>
       <div>
-        <button className="bg-purple h-[48px] px-[20px] text-base text-white font-normal rounded">
+        <button className="bg-purple h-[48px] px-[20px] text-base text-white font-normal rounded hidden tablet:block laptop:block">
           {" "}
           Connect Wallet
         </button>

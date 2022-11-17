@@ -6,9 +6,9 @@ import opensea from "../assets/images/opensea.svg";
 const Hero = () => {
   return (
     <>
-      <div className="w-[80%] mt-[100px] mb-4 mx-auto grid grid-cols-2 gap-28 font-rose ">
-        <div className="max-w-[460px] mt-[60px]">
-          <h1 className="text-[40px]  font-xxbold tracking-tight">
+      <div className="w-[80%] mt-[16px] mb-4 mx-auto grid tablet:grid-cols-2 laptop:grid-cols-2 gap-28 font-rose mobile:grid-cols-1 tablet:mt-[100px]  ">
+        <div className="max-w-[460px] mt-[60px] ">
+          <h1 className="text-[30px]  font-xxbold tracking-tight tablet:text-[40px]">
             Rent a <span className="text-purple"> Place</span> away from{" "}
             <span className="text-purple">Home</span> in the{" "}
             <span className="text-purple">Metaverse</span>
@@ -31,13 +31,13 @@ const Hero = () => {
           </span>
         </div>
         <div className=" flex justify-center align-center">
-          <img src={hero} alt="" width={440} className="mr-0 object-fill" />
+          <img src={hero} alt="" width={440} className="mr-0 object-fill " />
         </div>
       </div>
       <div className="bg-purple w-[100%] h-[56px] mt-[48px] mb-8 flex justify-evenly">
-        <img src={mlogo1} alt="" width={180} />
-        <img src={mlogo2} alt="" width={180} />
-        <img src={opensea} alt="" width={180} />
+        <img src={mlogo1} alt="" width={180} className="mobile:w-[20%]" />
+        <img src={mlogo2} alt="" width={180} className="mobile:w-[20%]" />
+        <img src={opensea} alt="" width={180} className="mobile:w-[20%]" />
       </div>
     </>
   );

@@ -6,7 +6,7 @@ module.exports = {
       purple: " #A02279",
       black: "#434343",
       white: "#FFFFFF",
-      gray: "gray",
+      gray: "#D7D7D7",
       bgBlack: " #1D1D1E;",
     },
     fontFamily: {
